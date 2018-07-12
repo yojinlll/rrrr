@@ -1,5 +1,5 @@
 body{
-    background: #efefef;
+    background: #edf1e76e;
     margin: 0;
 }
 
@@ -17,6 +17,14 @@ hr{
     height: 0;
     border: none;
     border-top: 1px solid #dedede;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
 }
 
 .clearfix::after{
@@ -38,8 +46,8 @@ hr{
 }
 
 .topNavBar nav > ul > li >a {
-    font-size: 12px;
-    color: #b7b7b7;
+    font-size: 14.5px;
+    color: #969696;
     font-weight: bold; 
 
     border-top: 3px solid transparent;
@@ -66,7 +74,7 @@ hr{
 }
 
 .topNavBar nav > ul > li >a:hover {
-    border-bottom: 3px solid #E06567;
+    border-bottom: 3px solid #ee7730d4;
 }
 
 .topNavBar .logo{
@@ -78,11 +86,11 @@ hr{
 
 .topNavBar .logo .rs{
     margin-right: 4px;
-    color: #e6686a;
+    color: #ee7730d4;
 }
 
 .topNavBar .logo .card{
-    color: #9a9da2;
+    color: #969696;
 }
 
 .banner{
@@ -93,7 +101,7 @@ hr{
 
 .banner .mask{
     height: 515px;
-    background-color: rgb(0, 0, 0,0.5);
+    /* background-color: rgba(0, 0, 0, 0.123); */
 }
 
 .userCard{
@@ -101,10 +109,11 @@ hr{
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.171);
 }
 
 .userCard .welcome{
-    background: #e6686a;
+    background: #ee7730d4;
     color: white;
     display: inline-block;
     padding: 4px 16px;
@@ -122,7 +131,7 @@ hr{
     border: 10px solid transparent;
     width: 0px;
     height: 0px;
-    border-left-color: #e6686a;
+    border-left-color: #ee7730d4;
     border-top-width: 0px;
     position: absolute;
     top: 100%;
@@ -169,7 +178,7 @@ hr{
 }
 
 .userCard > footer.media{
-    background: #e6686a;
+    background: #ee7730d4;
     text-align: center;
 }
 
@@ -183,7 +192,7 @@ hr{
 }
 
 .userCard > footer.media > a:hover{
-    background: #cf5d5f;
+    background: #ee7730d4;
 }
 
 .userCard svg{
@@ -191,4 +200,182 @@ hr{
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+
+body > main{
+    margin-top: -340px;
+}
+
+body > main .downloadResume-wrapper{
+    text-align: center
+}
+
+body > main .downloadResume{
+    font-size: 18px;
+    line-height: 16px;
+    padding: 21px 55px;
+    display: inline-block;
+    border: 1px solid #c3c3c3;
+    background: #ffffff;
+    border-radius: 4px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 0.3s;
+}
+
+body > main .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+}
+
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: kaiti;     
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+section.skills,
+section.portfolio{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;;
+}
+
+section.skills h2,
+section.portfolio h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.skills h3{
+     font-size: 14px;
+     line-height: 1.1;
+     padding-right: 40px;
+}
+
+section.skills > ol{
+    background: white;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.171);
+    padding: 42px 50px 10px 50px;
+    margin-top: 30px;
+}
+
+section.skills > ol > li{
+    float: left;
+    width: 48%;
+    /* width: 50%; */
+    box-sizing: border-box;
+    /* padding-right: 25px; */
+    /* width: 42%; */
+    /* margin-right: 4%; */
+    /* margin-left: 4%; */
+}
+
+section.skills > ol > li:nth-child(even){
+    float: right;
+}
+
+section.skills .progressBar{
+    height: 3px;
+    background: #ee77302b;
+    border-radius: 2px;
+    margin:4px 0 40px 0;
+}
+
+section.skills .progressBar > .progress{
+    height: 100%;
+    width: 70%;
+    background: #ee7730d4;
+    border-radius: 2px;
+}   
+
+
+
+
+
+section.portfolio{
+    text-align: center;
+    margin-bottom: 100px; 
+}
+
+section.portfolio > nav > ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+section.portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+}
+
+section.portfolio > nav > ol > li:nth-child(1){
+    margin-left: 0;
+}
+
+/* section.portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+} */
+
+section.portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+
+
+section.portfolio > nav .bar{
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 32px;
+    border-radius: 2px;
+}
+
+section.portfolio > nav .bar-inner{
+    height: 100%;
+    background: #ee7730d4;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 34px;
+}
+
+section.portfolio > nav .bar.state-2 .bar-inner{
+    margin-left: 65px;
+    width: 50px;
+}
+
+section.portfolio > nav .bar.state-3 .bar-inner{
+    margin-left: 140px;
+    width: 105px;
+}
+
+section.portfolio .works{
+    position: relative;
+}
+
+section.portfolio .works img{
+    vertical-align: top;
+}
+
+
+section.portfolio .works  > .big,
+section.portfolio .works  > .small{
+    position: absolute;
+    box-shadow: 5px 3px 20px 0px rgba(0, 0, 0, 0.171);
+    /* z-index:-1; */
 }
